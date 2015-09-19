@@ -126,6 +126,17 @@
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.everit.persistence</groupId>
+      <artifactId>org.everit.persistence.querydsl.configuration.osgi.ecm</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.everit.persistence</groupId>
+      <artifactId>org.everit.persistence.querydsl.sqltemplates.osgi.ecm</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
     <!-- Basic OSGi to tests -->
     <dependency>
       <groupId>org.osgi</groupId>
@@ -236,7 +247,7 @@
       <artifactId>org.everit.osgi.bundles.org.json</artifactId>
       <version>1.0.0-v20140107</version>
     </dependency>
-  
+
     <!-- Dependencies needed by QueryDSL -->
     <dependency>
       <groupId>org.apache.servicemix.bundles</groupId>
@@ -249,6 +260,23 @@
       <version>1_2</version>
     </dependency>
     
+    <!-- JDBC related modules -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.187</version>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.spec.osgi</groupId>
+      <artifactId>ow2-jdbc-service-1.0-spec</artifactId>
+      <version>1.0.13</version>
+    </dependency>
+    <dependency>
+      <groupId>org.everit.osgi</groupId>
+      <artifactId>org.everit.osgi.jdbc.dsf</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+
     <!-- ECM -->
     <dependency>
       <groupId>org.everit.osgi</groupId>
@@ -260,6 +288,11 @@
       <artifactId>org.everit.osgi.ecm.component.ri</artifactId>
       <version>2.0.0-SNAPSHOT</version>
     </dependency>
+  <!--  <dependency>
+      <groupId>org.everit.osgi</groupId>
+      <artifactId>org.everit.osgi.ecm.component.webconsole</artifactId>
+      <version>2.0.0-SNAPSHOT</version>
+    </dependency> -->
   </dependencies>
 
 </project>
