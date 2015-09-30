@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.everit.persistence.querydsl.support.ri.osgi.ecm;
+package org.everit.persistence.querydsl.support.ri.ecm;
 
 /**
  * Constants that make it possible to configure the Support component programmatically.
@@ -28,7 +28,7 @@ public final class QuerydslSupportConstants {
   /**
    * OGSi service filter for the DataSource.
    */
-  public static final String ATTR_DATASOURCE_TARGET = "dataSource.target";
+  public static final String ATTR_DATA_SOURCE_TARGET = "dataSource.target";
 
   public static final String DEFAULT_SERVICE_DESCRIPTION = "Querydsl Support Component";
 

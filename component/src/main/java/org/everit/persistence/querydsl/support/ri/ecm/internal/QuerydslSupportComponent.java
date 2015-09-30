@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.everit.persistence.querydsl.support.ri.osgi.ecm.internal;
+package org.everit.persistence.querydsl.support.ri.ecm.internal;
 
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -31,7 +31,7 @@ import org.everit.osgi.ecm.component.ComponentContext;
 import org.everit.osgi.ecm.extender.ECMExtenderConstants;
 import org.everit.persistence.querydsl.support.QuerydslSupport;
 import org.everit.persistence.querydsl.support.ri.QuerydslSupportImpl;
-import org.everit.persistence.querydsl.support.ri.osgi.ecm.QuerydslSupportConstants;
+import org.everit.persistence.querydsl.support.ri.ecm.QuerydslSupportConstants;
 import org.osgi.framework.Constants;
 import org.osgi.framework.ServiceRegistration;
 
@@ -56,9 +56,9 @@ import aQute.bnd.annotation.headers.ProvideCapability;
             + "identify the service registered by this component.") })
 public class QuerydslSupportComponent {
 
-  public static final int PRIORITY_01_DATASOURCE = 1;
+  public static final int P01_DATA_SOURCE = 1;
 
-  public static final int PRIORITY_02_CONFIGURATION = 2;
+  public static final int P02_CONFIGURATION = 2;
 
   /**
    * Querydsl configuration.
@@ -96,15 +96,15 @@ public class QuerydslSupportComponent {
   }
 
   @ServiceRef(attributeId = QuerydslSupportConstants.ATTR_CONFIGURATION_TARGET,
-      defaultValue = "", attributePriority = PRIORITY_02_CONFIGURATION,
+      defaultValue = "", attributePriority = P02_CONFIGURATION,
       label = "Configuration OSGi filter",
       description = "OSGi filter for Querydsl Configuration service instance.")
   public void setConfiguration(final Configuration configuration) {
     this.configuration = configuration;
   }
 
-  @ServiceRef(attributeId = QuerydslSupportConstants.ATTR_DATASOURCE_TARGET,
-      defaultValue = "", attributePriority = PRIORITY_01_DATASOURCE,
+  @ServiceRef(attributeId = QuerydslSupportConstants.ATTR_DATA_SOURCE_TARGET,
+      defaultValue = "", attributePriority = P01_DATA_SOURCE,
       label = "DataSource OSGi filter",
       description = "OSGi filter for javax.sql.DataSource OSGi service")
   public void setDataSource(final DataSource dataSource) {

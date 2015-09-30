@@ -23,7 +23,7 @@
   </parent>
 
   <groupId>org.everit.persistence</groupId>
-  <artifactId>org.everit.persistence.querydsl.support.ri.osgi.ecm.parent</artifactId>
+  <artifactId>org.everit.persistence.querydsl.support.ri.ecm.parent</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
   <packaging>pom</packaging>
