@@ -24,6 +24,7 @@ import org.everit.osgi.ecm.annotation.Activate;
 import org.everit.osgi.ecm.annotation.Component;
 import org.everit.osgi.ecm.annotation.ConfigurationPolicy;
 import org.everit.osgi.ecm.annotation.Deactivate;
+import org.everit.osgi.ecm.annotation.ManualService;
 import org.everit.osgi.ecm.annotation.ServiceRef;
 import org.everit.osgi.ecm.annotation.attribute.StringAttribute;
 import org.everit.osgi.ecm.annotation.attribute.StringAttributes;
@@ -51,10 +52,13 @@ import aQute.bnd.annotation.headers.ProvideCapability;
 @StringAttributes({
     @StringAttribute(attributeId = Constants.SERVICE_DESCRIPTION,
         defaultValue = QuerydslSupportConstants.DEFAULT_SERVICE_DESCRIPTION,
-        label = "Service Description",
+        priority = QuerydslSupportComponent.P00_SERVICE_DESCRIPTION, label = "Service Description",
         description = "The description of this component configuration. It is used to easily "
             + "identify the service registered by this component.") })
+@ManualService(QuerydslSupport.class)
 public class QuerydslSupportComponent {
+
+  public static final int P00_SERVICE_DESCRIPTION = 0;
 
   public static final int P01_DATA_SOURCE = 1;
 
