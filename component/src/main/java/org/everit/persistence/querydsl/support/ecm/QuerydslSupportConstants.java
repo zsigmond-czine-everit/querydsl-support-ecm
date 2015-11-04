@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.everit.persistence.querydsl.support.ri.ecm;
+package org.everit.persistence.querydsl.support.ecm;
 
 /**
  * Constants that make it possible to configure the Support component programmatically.
@@ -36,7 +36,7 @@ public final class QuerydslSupportConstants {
    * The name of the component.
    */
   public static final String SERVICE_FACTORYPID_QUERYDSL_SUPPORT =
-      "org.everit.persistence.querydsl.support.QuerydslSupport";
+      "org.everit.persistence.querydsl.support.ecm.QuerydslSupport";
 
   private QuerydslSupportConstants() {
   }

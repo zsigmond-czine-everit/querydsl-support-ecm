@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.everit.persistence.querydsl.support.ri.ecm.internal;
+package org.everit.persistence.querydsl.support.ecm.internal;
 
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -31,12 +31,12 @@ import org.everit.osgi.ecm.annotation.attribute.StringAttributes;
 import org.everit.osgi.ecm.component.ComponentContext;
 import org.everit.osgi.ecm.extender.ECMExtenderConstants;
 import org.everit.persistence.querydsl.support.QuerydslSupport;
+import org.everit.persistence.querydsl.support.ecm.QuerydslSupportConstants;
 import org.everit.persistence.querydsl.support.ri.QuerydslSupportImpl;
-import org.everit.persistence.querydsl.support.ri.ecm.QuerydslSupportConstants;
 import org.osgi.framework.Constants;
 import org.osgi.framework.ServiceRegistration;
 
-import com.mysema.query.sql.Configuration;
+import com.querydsl.sql.Configuration;
 
 import aQute.bnd.annotation.headers.ProvideCapability;
 

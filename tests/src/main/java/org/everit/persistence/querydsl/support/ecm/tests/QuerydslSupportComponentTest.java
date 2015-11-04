@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.everit.persistence.querydsl.support.ri.ecm.tests;
+package org.everit.persistence.querydsl.support.ecm.tests;
 
 import org.everit.osgi.dev.testrunner.TestRunnerConstants;
 import org.everit.osgi.ecm.annotation.Component;
